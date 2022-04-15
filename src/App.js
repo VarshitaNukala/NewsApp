@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./style.css";
 
 export default class App extends Component {
-  apiKey = process.env.REACT_APP_NEWS_API;
   render() {
     return (
       <div>
@@ -23,81 +22,56 @@ export default class App extends Component {
             <Route
               excat
               path="/entertainment"
-              element={
-                <News
-                  key="entertainment"
-                  apiKey={this.apiKey}
-                  category="entertainment"
-                />
-              }
+              element={<News key="entertainment" category="entertainment" />}
             ></Route>
             <Route
               excat
               path="/environment"
-              element={
-                <News
-                  key="environment"
-                  apiKey={this.apiKey}
-                  category="environment"
-                />
-              }
+              element={<News key="environment" category="environment" />}
             ></Route>
             <Route
               excat
               path="/food"
-              element={<News key="food" apiKey={this.apiKey} category="food" />}
+              element={<News key="food" category="food" />}
             ></Route>
             <Route
               excat
               path="/health"
-              element={
-                <News key="health" apiKey={this.apiKey} category="health" />
-              }
+              element={<News key="health" category="health" />}
             ></Route>
             <Route
               excat
               path="/politics"
-              element={
-                <News key="politics" apiKey={this.apiKey} category="politics" />
-              }
+              element={<News key="politics" category="politics" />}
             ></Route>
             <Route
               excat
               path="/science"
-              element={
-                <News key="science" apiKey={this.apiKey} category="science" />
-              }
+              element={<News key="science" category="science" />}
             ></Route>
             <Route
               excat
               path="/sports"
-              element={
-                <News key="sports" apiKey={this.apiKey} category="sports" />
-              }
+              element={<News key="sports" category="sports" />}
             ></Route>
             <Route
               excat
               path="/technology"
-              element={
-                <News
-                  key="technology"
-                  apiKey={this.apiKey}
-                  category="technology"
-                />
-              }
+              element={<News key="technology" category="technology" />}
             ></Route>
             <Route
               excat
               path="/top"
-              element={<News key="top" apiKey={this.apiKey} category="top" />}
+              element={<News key="top" category="top" />}
             ></Route>
             <Route
               path="/"
-              element={
-                <News key="world" apiKey={this.apiKey} category="world" />
-              }
+              element={<News key="world" category="world" />}
             ></Route>
-            
+            <Route
+              path="/NewsApp"
+              element={<News key="general" category="world" />}
+            ></Route>
           </Routes>
         </Router>
       </div>
