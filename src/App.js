@@ -92,7 +92,6 @@ export default class App extends Component {
               element={<News key="top" apiKey={this.apiKey} category="top" />}
             ></Route>
             <Route
-              excat
               path="/"
               element={
                 <News key="world" apiKey={this.apiKey} category="world" />
