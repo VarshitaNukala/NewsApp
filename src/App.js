@@ -97,12 +97,7 @@ export default class App extends Component {
                 <News key="world" apiKey={this.apiKey} category="world" />
               }
             ></Route>
-            <Route
-              path="/NewsApp"
-              element={
-                <News key="world" apiKey={this.apiKey} category="world" />
-              }
-            ></Route>
+            
           </Routes>
         </Router>
       </div>
